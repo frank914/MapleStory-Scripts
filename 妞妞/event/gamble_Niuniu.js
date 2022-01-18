@@ -141,7 +141,7 @@ function setup() {
     em.println(getCurrentTime() + "新妞妞莊家牌: " + tmpMsg);
 	em.logFile("妞妞/莊家最新開牌紀錄.txt", getCurrentTime() + "新妞妞莊家牌: " + tmpMsg,true);
 	if ( 地圖限制[0] ) {
-		map.dropMessage("[妞妞系統] : 妞妞開放下注啦！快來試試手氣吧!上把莊家牌為 : " + tmpMsg2 + " (領獎時間5分鐘)");
+		map.dropMessage(6,"[妞妞系統] : 妞妞開放下注啦！快來試試手氣吧!上把莊家牌為 : " + tmpMsg2 + " (領獎時間5分鐘)");
 	} else {
 		em.broadcastGambleMessage(3, "[妞妞系統] : 妞妞開放下注啦！快來試試手氣吧!上把莊家牌為 : " + tmpMsg2 + " (領獎時間5分鐘)" );
 	}
