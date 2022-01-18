@@ -58,8 +58,8 @@ var name = "XX谷";
 function start(){
     channelServer = cm.getChannelServer(cm.getMap().getWorld(), 執行頻道);
     em = channelServer.getEventSM().getEventManager("gamble_Baccarat");
-	if(cm.getClient().getChannel()!=執行頻道||cm.getPlayer().getMapId() != 910000000){
-		cm.sendOk("請在自由3頻道進行!");
+	if(cm.getClient().getChannel()!=執行頻道||cm.getPlayer().getMapId() != 執行地圖){
+		cm.sendOk("請在"+cm.getMap(執行地圖).getMapName()+執行頻道+"頻道進行!");
 		cm.dispose();
 		return;
 	}
